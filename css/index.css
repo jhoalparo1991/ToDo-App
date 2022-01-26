@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: none; */
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.tareas {
+  text-align: center;
+  color: rgb(129, 129, 129);
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.card-info {
+  width: 45%;
+  border-left: 2px dashed gray;
+}
+.card-info ul {
+  padding: 10px;
+}
+.card-info ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.card-info ul li span {
+  color: black;
+}
+.card-info ul li button {
+  background: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.btn-agregar {
+  border: none;
+  padding: 10px;
+  width: 30%;
+  background: #078003;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+}
+
+@media (max-width: 400px) {
+  .btn-agregar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card-body,
+  .card-info {
+    width: 100%;
+  }
+}
